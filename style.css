@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: orange;
+}
+
+#side-bar {
+    width: 250px;
+    background-color: black;
+}
+
+body {
+    background-color: rgb(27, 31, 39);
+}
+
+body #playbar div img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+
+
+}
+
+.main-container {
+    width: 100%;
+    height: calc(100% - 90px);
+}
+
+#playbar {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(44, 44, 44);
+    position: fixed;
+    z-index: 1000px;
+    bottom: 0;
+}
+
+#main-content {
+    width: calc(100% - 250px);
+    background-color: rgb(27, 31, 39);
+    padding-top: 90px;
+    overflow-y: scroll;
+    color: white;
+}
+
+.card-container {
+    width: calc(100% * 6 - 250px);
+}
+
+#call-to-action {
+    background-color: rgb(16, 19, 25);
+    width: calc(100% - 250px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+
+.aggiungi {
+    background-color: lightgray;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.upgrade {
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+a {
+    color: white;
+}
+
+
+img {
+    width: 100%;
+  
+}
+
+#logo-small{
+    display: none;
+    
+}
+
+body main #main-content a {
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+/*hover*/
+a:hover{
+    color: #5e5e5e;
+}
+#main-content a:hover{
+    color: #5e5e5e;
+}
+
+
+/*foto circolari*/ 
+.border-foto{
+    border-radius: 50%; 
+    overflow: hidden;
+}
+.ridimensione-foto{
+    object-fit: cover;
+    height: 100% ;
+    width: 100%;
+    
+}
+
+
+
+/*utility*/
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*flex*/
+.flexer {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-center {
+    align-items: center;
+}
+
+.f-end {
+    justify-content: flex-end;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+/*colori*/
+.white {
+    color: white;
+}
+
+/*paddings*/
+.p-20 {
+    padding: 20px;
+}
+
+.p-10 {
+    padding: 9px;
+}
+
+.p-5{
+    padding: 5px;
+}
+
+
+/*gap*/
+.gap-5{
+    gap: 5px;
+}
+
+
+
+/*margini*/
+.mt-20 {
+    margin-top: 20px;
+}
+
+.m-top {
+    margin-top: 20px;
+}
+
+.m-left {
+    margin-left: 20px;
+}
+
+.m-top15 {
+    margin-top: 15px;
+}
+
+.m-bottom5 {
+    margin-bottom: 5px;
+}
+
+#popular .t-center .border-foto{
+    height: calc((100vw / 6) - 15px);
+}
+
+
+
+/*centro*/
+.t-center {
+    text-align: center;
+    width: calc(100% / 6);
+    padding: 10px;
+}
+
+.t-sinistra {
+    text-align: left;
+}
+
+.line-height {
+    line-height: 30px;
+}
+
+.container-player {
+    width: calc(100% / 3);
+}
+
+
+/*playbar dimensions*/
+.playbar-dimension {
+    font-size: 30px;
+}
+
+.back {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.redo-random {
+    font-size: 20px;
+}
+
+.under-line {
+    font-size: 12px;
+}
+
+
+input {
+    height: 4px;
+    appearance: none;
+    width: 100%;
+    margin: 2px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    background-color: #5e5e5e;
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    .t-center {
+        width: calc(100% / 4);
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    .t-center {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .t-center {
+        width: calc(100% / 2);
+    }
+}
+ 
+
+ @media screen and (max-width: 576px) {
+    .t-center {
+        width: calc(100% / 2);
+    }
+
+    #logo-big{
+        display: none;
+    }
+
+    #logo-small{
+        display: block;
+        margin-left: -10px;
+    }
+
+    #side-bar{
+        width: 50px;
+    }
+    #main-content{
+        width: calc(100% - 50px);
+    }
+
+    #side-bar span {
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    #playbar{
+        width: calc;
+    }
+    
+    #call-to-action{
+        width: calc(100% - 50px);
+    }
+
+    #playbar h4,p{ 
+        font-size: 10px;
+    }
+    
+    #v2{
+        width: 50%;
+    }
+
+   
+}
+
+
+
+ 
+ 
